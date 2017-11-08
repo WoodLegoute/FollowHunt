@@ -7,14 +7,14 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginScreen">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginScreenController">
    <children>
       <Label layoutX="82.0" layoutY="177.0" prefHeight="46.0" prefWidth="142.0" text="NOTIFIED" textFill="WHITE">
          <font>
             <Font name="MS Gothic" size="34.0" />
          </font>
       </Label>
-      <AnchorPane layoutX="292.0" prefHeight="400.0" prefWidth="408.0" style="-fx-background-color: e82020;">
+      <AnchorPane fx:id="loginPane" layoutX="292.0" prefHeight="400.0" prefWidth="408.0" style="-fx-background-color: e82020;">
          <children>
             <Label layoutX="116.0" layoutY="123.0" prefHeight="20.0" prefWidth="196.0" text="Login to your Instagram account" textFill="#f8f5f5">
                <font>
