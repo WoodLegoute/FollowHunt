@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
-public class _DriverTreeViewCounty extends Application {
+public class _DriverNotified extends Application {
 
 	public static void main(String[] args) {
 		Application.launch(args);
@@ -18,7 +18,7 @@ public class _DriverTreeViewCounty extends Application {
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		
-		URL url = _DriverTreeViewCounty.class.getResource("TreeViewCounty.fxml");
+		URL url = _DriverNotified.class.getResource("notified_login.fxml");
 		
 		AnchorPane mainPane = FXMLLoader.load(url);
 		
