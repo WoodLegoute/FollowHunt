@@ -1,9 +1,18 @@
 package application;
 
 import com.jfoenix.controls.JFXTextField;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Node;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.stage.Stage;
+import javafx.stage.StageStyle;
+
+import java.io.IOException;
 
 public class LoginScreenController {
 
@@ -23,18 +32,13 @@ public class LoginScreenController {
     private Button close;
 
     @FXML
-    void f8f5f5(ActionEvent event) {
-
-    }
-
-    @FXML
-    void loginButton(ActionEvent event) {
-
-    }
-
-    @FXML
-    void e8e5e5(ActionEvent event) {
-
+    void loginButton(ActionEvent event) throws IOException {
+        Parent lol = FXMLLoader.load(getClass().getResource("GatherPage.fxml"));
+        Scene gather = new Scene(lol);
+        Stage gatherStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        gatherStage.setScene(gather);
+        gatherStage.initStyle(StageStyle.UNDECORATED);
+        gatherStage.show();
     }
 
     @FXML
