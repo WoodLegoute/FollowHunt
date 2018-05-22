@@ -1,6 +1,7 @@
 package application;
 
 import com.jfoenix.controls.JFXTextField;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -43,8 +44,7 @@ public class LoginScreenController {
 
     @FXML
     void closeButton(ActionEvent event) {
-    		
-    	testPrompt.setText("This will close the app");
+        Platform.exit();
     }
 
 }
