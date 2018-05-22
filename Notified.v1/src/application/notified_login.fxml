@@ -7,44 +7,44 @@
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginScreenController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: #0D0D0F;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.LoginScreenController">
    <children>
-      <Label layoutX="82.0" layoutY="177.0" prefHeight="46.0" prefWidth="142.0" text="NOTIFIED" textFill="WHITE">
+      <Label layoutX="259.0" layoutY="58.0" prefHeight="60.0" prefWidth="300.0" text="FollowHunt" textFill="WHITE">
          <font>
-            <Font name="MS Gothic" size="34.0" />
+            <Font name="MS Gothic" size="57.0" />
          </font>
       </Label>
-      <AnchorPane fx:id="loginPane" layoutX="292.0" prefHeight="400.0" prefWidth="408.0" style="-fx-background-color: e82020;">
+      <AnchorPane fx:id="loginPane" layoutX="205.0" layoutY="189.0" prefHeight="372.0" prefWidth="408.0" style="-fx-background-color: #393939;">
          <children>
-            <Label layoutX="116.0" layoutY="123.0" prefHeight="20.0" prefWidth="196.0" text="Login to your Instagram account" textFill="#f8f5f5">
+            <Label layoutX="122.0" layoutY="72.0" prefHeight="20.0" prefWidth="173.0" text="Login to your Instagram account" textFill="#f8f5f5">
                <font>
                   <Font name="System Italic" size="12.0" />
                </font>
             </Label>
-            <Button fx:id="login" layoutX="100.0" layoutY="286.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="36.0" prefWidth="228.0" style="-fx-background-color: #353535;" text="Login" textFill="#e8e5e5">
+            <JFXTextField fx:id="usernameField" focusColor="WHITE" layoutX="136.0" layoutY="126.0" promptText="Username" unFocusColor="#a7a5a5" />
+            <JFXTextField fx:id="passwordField" focusColor="WHITE" layoutX="136.0" layoutY="186.0" promptText="Password" unFocusColor="#a7a5a5" />
+            <Button fx:id="login" layoutX="122.0" layoutY="256.0" mnemonicParsing="false" onAction="#loginButton" prefHeight="38.0" prefWidth="173.0" style="-fx-background-color: #0D0D0F;" text="Login" textFill="#e8e5e5">
                <font>
                   <Font name="MS Gothic" size="16.0" />
                </font>
             </Button>
-            <Label layoutX="64.0" layoutY="81.0" text="SOCIAL MEDIA MADNESS">
-               <font>
-                  <Font name="MS Gothic" size="30.0" />
-               </font>
-            </Label>
-            <JFXTextField fx:id="usernameField" layoutX="137.0" layoutY="160.0" promptText="Username" />
-            <JFXTextField fx:id="passwordField" layoutX="137.0" layoutY="216.0" promptText="Password" />
-            <Button fx:id="close" layoutX="364.0" layoutY="14.0" mnemonicParsing="false" onAction="#closeButton" style="-fx-background-color: e82020;" text="x">
-               <font>
-                  <Font name="MS Gothic" size="18.0" />
-               </font>
-            </Button>
-            <Label fx:id="testPrompt" layoutX="173.0" layoutY="356.0" text="test prompt" />
+            <Label fx:id="testPrompt" layoutX="177.0" layoutY="342.0" text="test prompt" />
          </children>
       </AnchorPane>
-      <ImageView blendMode="COLOR_BURN" fitHeight="133.0" fitWidth="177.0" layoutX="87.0" layoutY="80.0" pickOnBounds="true" preserveRatio="true">
+      <ImageView blendMode="COLOR_BURN" fitHeight="133.0" fitWidth="177.0" layoutX="527.0" layoutY="63.0" pickOnBounds="true" preserveRatio="true" rotate="45.0">
          <image>
-            <Image url="@../workspace/Notified-master/Notified.v1/Notified/Notified.v1/src/images/notified_icon.png" />
+            <Image url="@../images/notified_icon.png" />
          </image>
       </ImageView>
+      <Button fx:id="close" layoutX="758.0" mnemonicParsing="false" onAction="#closeButton" prefHeight="46.0" prefWidth="42.0" style="-fx-background-color: #0D0D0F;" text="x" textFill="WHITE">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Button>
+      <Label layoutX="250.0" layoutY="129.0" text="SOCIAL MEDIA MADNESS" textAlignment="CENTER">
+         <font>
+            <Font name="MS Gothic" size="30.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
